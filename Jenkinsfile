@@ -16,7 +16,7 @@ pipeline {
         stage ('Build docker image') {
             steps {
                 script {
-                    def customImage = docker.build('ismailshaikh/petclinic',"./docker")
+                    def customImage = docker.build('alzaar07/petclinic',"./docker")
                     docker.withRegistry('https://registry.hub.docker.com', 'dockerhub') {
                     customImage.push('latest')
                     }
