@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: ismailshaikh/petclinic
+  repository: alzaar07/petclinic
   tag: latest
   pullPolicy: IfNotPresent
 
